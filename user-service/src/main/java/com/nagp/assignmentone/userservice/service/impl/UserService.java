@@ -9,7 +9,12 @@ import org.springframework.stereotype.Component;
 import com.nagp.assignmentone.userservice.dto.UserDTO;
 import com.nagp.assignmentone.userservice.model.User;
 import com.nagp.assignmentone.userservice.service.IUserService;
-
+/**
+ * User service to find out the user in the list
+ * 
+ * @author ashishaggarwal
+ *
+ */
 @Component
 public class UserService implements IUserService{
 

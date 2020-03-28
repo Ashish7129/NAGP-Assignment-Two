@@ -14,7 +14,12 @@ import com.nagp.assignmentone.orderservice.dto.OrderResponse;
 import com.nagp.assignmentone.orderservice.model.Order;
 import com.nagp.assignmentone.orderservice.service.IOrderService;
 
-
+/**
+ * Retrieve the orders of specific user
+ *  
+ * @author ashishaggarwal
+ *
+ */
 @Service
 public class OrderService implements IOrderService {
 
@@ -28,6 +33,9 @@ public class OrderService implements IOrderService {
 		orders.add(new Order(3,1,650,Calendar.getInstance().getTime()));
 		
 	}
+	/**
+	 * Get the orders using userId
+	 */
 	@Override
 	public OrderDTO getOrders(int userId) {
 		OrderDTO orderDTO = new OrderDTO();
