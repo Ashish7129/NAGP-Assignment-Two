@@ -11,7 +11,7 @@ public interface IUserService {
 	 * @param userId
 	 * @return
 	 */
-	public UserDTO getUser(final Long userId);
+	public UserDTO getUser(final Integer userId);
 
 	
 }

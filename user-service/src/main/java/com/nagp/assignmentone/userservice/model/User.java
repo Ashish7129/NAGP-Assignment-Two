@@ -1,13 +1,21 @@
 package com.nagp.assignmentone.userservice.model;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
 public class User {
 
-	private int userId;
+	@Id
+	@GeneratedValue(strategy=GenerationType.AUTO)
+	private Integer userId;
 	private String name;
 	private int age;
 	private String email;
 	
-	public User(int userId, String name, int age, String email) {
+	public User(Integer userId, String name, int age, String email) {
 		this.userId = userId;
 		this.name = name;
 		this.age = age;
@@ -34,10 +42,10 @@ public class User {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	public int getUserId() {
+	public Integer getUserId() {
 		return userId;
 	}
-	public void setUserId(int userId) {
+	public void setUserId(Integer userId) {
 		this.userId = userId;
 	}
 	

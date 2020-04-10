@@ -1,7 +1,9 @@
 FROM openjdk:8
 
-ADD target/order-service-0.0.1-SNAPSHOT.jar orderservice.jar
+WORKDIR /order-service
+
+COPY target/order-service-0.0.1-SNAPSHOT.jar /order-service
 
 EXPOSE 8082
 
-ENTRYPOINT ["java","-jar","orderservice.jar"]
+ENTRYPOINT ["java","-jar","/order-service/order-service-0.0.1-SNAPSHOT.jar"]

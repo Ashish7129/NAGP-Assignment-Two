@@ -30,7 +30,7 @@ public class UserService implements IUserService{
 	}
 	
 	@Override
-	public UserDTO getUser(Long userId) {
+	public UserDTO getUser(Integer userId) {
 		Optional<User> user = users.stream().filter(p -> p.getUserId() == userId).distinct().findFirst();
 		UserDTO userDTO = new UserDTO();
 		if(user.isPresent()) {
