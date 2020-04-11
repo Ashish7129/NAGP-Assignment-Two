@@ -1,0 +1,16 @@
+apiVersion: v1
+data:
+  MYSQL_HOST: mysql-service
+  MYSQL_PASSWORD: root
+  MYSQL_USER: root
+  JAEGER_HOST: jaeger-agent
+kind: ConfigMap
+metadata:
+  creationTimestamp: "2020-04-09T18:33:16Z"
+  labels:
+    app: user
+  name: user-config-hhhz
+  namespace: default
+  resourceVersion: "6444"
+  selfLink: /api/v1/namespaces/default/configmaps/user-config-hhhz
+  uid: 93dfa530-7a90-11ea-a7a5-42010a800075

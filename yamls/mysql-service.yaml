@@ -1,0 +1,27 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: "2020-04-10T10:32:48Z"
+  labels:
+    app: mysql
+  name: mysql-service
+  namespace: default
+  resourceVersion: "1784"
+  selfLink: /api/v1/namespaces/default/services/mysql-service
+  uid: 9f7d7e88-7b16-11ea-9c44-42010a800052
+spec:
+  clusterIP: 10.99.1.98
+  externalTrafficPolicy: Cluster
+  ports:
+  - nodePort: 31407
+    port: 3306
+    protocol: TCP
+    targetPort: 3306
+  selector:
+    app: mysql
+  sessionAffinity: None
+  type: LoadBalancer
+status:
+  loadBalancer:
+    ingress:
+    - ip: 35.188.131.133

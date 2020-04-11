@@ -1,0 +1,15 @@
+apiVersion: v1
+data:
+  ORDER_URL: http://order-service
+  USER_URL: http://user-service
+  JAEGER_HOST: jaeger-agent
+kind: ConfigMap
+metadata:
+  creationTimestamp: "2020-04-10T11:05:41Z"
+  labels:
+    app: aggregator
+  name: aggregator-config-dbpq
+  namespace: default
+  resourceVersion: "8941"
+  selfLink: /api/v1/namespaces/default/configmaps/aggregator-config-dbpq
+  uid: 3786ddf4-7b1b-11ea-9c44-42010a800052
